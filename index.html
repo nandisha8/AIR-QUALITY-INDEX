@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollution Detection</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="pollutionData">
+    <h2>Pollution Detection</h2>
+    <img class="image" src="fig.png" alt="">
+    <style>
+        .image{
+            height: 900px;
+            width:700px;
+        }
+    </style>
+    
+    
+    <p id="pollutionLevel">Pollution Level: <span id="level">Loading...</span></p>
+    <button onclick="detectPollution()">Detect Pollution</button>
+    <canvas id="pollutionChart"></canvas>
+    <p>Air quality is good. No precautions needed.</p>
+  <p> Air quality is moderate. Sensitive groups should consider reducing prolonged outdoor exertion.</p>
+  <p> Air quality is unhealthy for sensitive groups. Children and people with lung disease should avoid strenuous outdoor activities.</p>
+  <p> Air quality is unhealthy. Everyone should avoid prolonged outdoor exertion; sensitive groups should stay indoors.</p>
+  <p> Air quality is very unhealthy. Everyone should avoid prolonged outdoor exertion; sensitive groups should avoid all outdoor exertion</p>
+    <p>Air quality is hazardous. Everyone should avoid any outdoor exertion; stay indoors and reduce activity levels.</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="index.js"></script>
+
+  
+  
+</body>
+
+</html>
